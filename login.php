@@ -112,7 +112,9 @@ $err="<font color='red'>Invalid login details</font>";
         <div class="row" style="margin-top:10px">
             <div class="col-sm-2"></div>
             <div class="col-sm-8">
-                <input type="submit" value="Login" name="save" class="btn btn-success" />
+                <br>
+                <input type="submit" value="Login" name="save" class="btn btn-success"
+                    style="background-color:#fec810;border:0px;position:absolute;left:45%" />
 
             </div>
         </div>

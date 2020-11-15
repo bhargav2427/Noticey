@@ -1,5 +1,7 @@
-<?php 
+<?php
 session_start();
+if(!isset($_SESSION['user']))
+    header('location:../login.php');
 include('../connection.php');
 $user= $_SESSION['user'];
 $sql=mysqli_query($conn,"select * from user where email='$user' ");
@@ -28,6 +30,22 @@ $users=mysqli_fetch_assoc($sql);
     <!-- Custom styles for this template -->
     <link href="../css/dashboard.css" rel="stylesheet">
 
+
+
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=d8757aeceb75e3b7250ddf3380e9d994">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css?h=587ac2057624923cd5be3eaf8b1158cd">
+
+
+
+
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../js/ie-emulation-modes-warning.js"></script>
@@ -41,6 +59,7 @@ $users=mysqli_fetch_assoc($sql);
 
 <body>
 
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -51,7 +70,11 @@ $users=mysqli_fetch_assoc($sql);
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a class="navbar-brand"
+                    style="font-family: Kaushan Script,Helvetica Neue,Helvetica,Arial,cursive;color:#fec503;font-size: 1.75em;"
+                    href="#">Noticey</a>
                 <a class="navbar-brand" href="#">Hello <?php echo $users['name'];?></a>
+                <sapn> .</sapn>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">

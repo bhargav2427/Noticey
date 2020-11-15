@@ -201,8 +201,10 @@ $err="<font color='blue'>Registration successfull !!</font>";
 
 
                 <Td colspan="2" align="center">
-                    <input type="submit" class="btn btn-success" value="Save" name="save" />
-                    <input type="reset" class="btn btn-success" value="Reset" />
+                    <input type="submit" class="btn btn-success" value="Save" name="save"
+                        style="background-color:#fec810;border:0px" />
+                    <input type="reset" class="btn btn-success" value="Reset"
+                        style="background-color:#fec810;border:0px" />
 
                 </td>
             </tr>
