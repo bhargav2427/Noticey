@@ -51,6 +51,9 @@ $err="<font color='red'>Invalid login details</font>";
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/Login-Form-Clean.css?h=587ac2057624923cd5be3eaf8b1158cd">
+
+
+
     <style>
     body {
         background-color: #f1f6fd;
@@ -76,6 +79,8 @@ $err="<font color='red'>Invalid login details</font>";
                             href="./registration.php">Sign up</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
                             href="./login.php">Login&nbsp;</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                            href="./admin/index.php">Admin Login&nbsp;</a></li>
 
                 </ul>
             </div>
@@ -91,7 +96,7 @@ $err="<font color='red'>Invalid login details</font>";
 
         <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4"><?php echo @$err;?></div>
+            <div class="col-sm-4" style="text-align:center;"><?php echo @$err;?></div>
         </div>
 
 

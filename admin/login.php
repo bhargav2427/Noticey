@@ -49,7 +49,11 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <style>
+    body {
+        background-color: #f1f6fd;
+    }
+    </style>
 </head>
 
 <body>
@@ -65,24 +69,27 @@
                         <form method="post">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" name="email" type="email" autofocus required placeholder="E-mail">
+                                    <input class="form-control" name="email" type="email" autofocus required
+                                        placeholder="E-mail">
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="pass" type="password" required>
+                                    <input class="form-control" placeholder="Password" name="pass" type="password"
+                                        required>
                                 </div>
-                                
-                                
-								<div class="form-group">
-                                    <input name="login" type="submit" value="Login" class="btn btn-lg btn-success btn-block">
+
+
+                                <div class="form-group">
+                                    <input name="login" type="submit" style="background-color:#fec810;" value="Login"
+                                        class="btn btn-lg btn-success btn-block">
                                 </div>
-								
-								<div class="form-group">
+
+                                <div class="form-group">
                                     <label>
                                         <?php echo @$err;?>
                                     </label>
                                 </div>
-								
-                                
+
+
                             </fieldset>
                         </form>
                     </div>

@@ -77,16 +77,6 @@ $err="<font color='blue'>Registration successfull !!</font>";
 </head>
 
 <body>
-
-
-
-
-
-
-
-
-
-
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
         <div class="container"><a class="navbar-brand" href="index.php">Noticey</a><button data-toggle="collapse"
                 data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button"
@@ -98,7 +88,8 @@ $err="<font color='blue'>Registration successfull !!</font>";
                             href="./registration.php">Sign up</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
                             href="./login.php">Login&nbsp;</a></li>
-
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                            href="./admin/index.php">Admin Login&nbsp;</a></li>
                 </ul>
             </div>
         </div>
@@ -111,7 +102,7 @@ $err="<font color='blue'>Registration successfull !!</font>";
     <form method="post" enctype="multipart/form-data">
         <table class="table table-bordered center" style="width:50%;border:1px solid black; ">
             <Tr>
-                <Td colspan="2"><?php echo @$err;?></Td>
+                <Td colspan="2" style="text-align:center"><?php echo @$err;?></Td>
             </Tr>
 
             <tr>
