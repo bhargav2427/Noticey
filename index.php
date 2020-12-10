@@ -17,6 +17,12 @@ include('connection.php');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/Login-Form-Clean.css?h=587ac2057624923cd5be3eaf8b1158cd">
+
+
+
+
+
+
 </head>
 
 <body id="page-top">
@@ -31,6 +37,8 @@ include('connection.php');
                             href="./registration.php">Sign up</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
                             href="./login.php">Login&nbsp;</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                            href="./admin/index.php">Admin Login</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
                             href="#about">About</a></li>
                     <li class="nav-item" role="presentation"></li>
@@ -172,6 +180,7 @@ include('connection.php');
     <section id="team" class="bg-light">
         <div class="container">
             <div class="row">
+                <!--
                 <div class="col-sm-4">
                     <div class="team-member"><img class="rounded-circle mx-auto" src="assets/img/team/shambhavi.jpeg">
                         <h4>Shambhavi Aggarwal</h4>
@@ -183,6 +192,7 @@ include('connection.php');
                         </ul>
                     </div>
                 </div>
+                -->
                 <div class="col-sm-4">
                     <div class="team-member"></div>
                 </div>
